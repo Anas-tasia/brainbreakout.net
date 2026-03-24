@@ -99,7 +99,6 @@ img {
 .hero-section {
   position: relative;
   padding: 160px 0;
-  font-size: 56px;
   background: linear-gradient(
       rgba(31, 42, 68, 0.85),
       rgba(31, 42, 68, 0.85)
@@ -149,7 +148,6 @@ img {
 .features {
   padding: 100px 0;
   background: var(--background-secondary);
-  flex: 1 1 300px;
 }
 
 .section-title {
@@ -211,33 +209,15 @@ img {
 }
 
 /* ========================= */
-/* 📱 TABLET */
-/* ========================= */
-@media (max-width: 768px) {
-
-  .hero-title {
-    font-size: 36px;
-  }
-
-  .navigation-container {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .address-list {
-    flex-direction: column;
-    gap: 8px;
-  }
-}
-
-/* ========================= */
-/* 📱 MOBILE */
+/* 📱 Mobile */
 /* ========================= */
 @media (max-width: 480px) {
+
   .navigation-container {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    flex-wrap: wrap;
   }
 
   .logo-link {
@@ -247,8 +227,7 @@ img {
   .address-list {
     align-items: center;
   }
-}
-@media (max-width: 480px) {
+
   .hero-section {
     padding: 80px 0;
   }
@@ -262,8 +241,7 @@ img {
     font-size: 15px;
     line-height: 1.4;
   }
-}
-@media (max-width: 480px) {
+
   .features-list {
     flex-direction: column;
   }
