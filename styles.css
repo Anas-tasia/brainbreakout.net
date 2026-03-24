@@ -1,8 +1,6 @@
 /* ===== BASE ===== */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+* {
+  max-width: 100%;
 }
 
 body {
@@ -10,8 +8,13 @@ body {
   font-family: 'Roboto', sans-serif;
   background: #F5F9FF;
   color: #1F2A44;
+  overflow-x: hidden;
 }
-
+p, h1, h2, h3, a {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+F
 img {
   max-width: 100%;
   display: block;
@@ -128,7 +131,8 @@ img {
 @media (max-width: 768px) {
 
   .hero-title {
-    font-size: 32px;
+    max-width: 100%;
+  padding: 0 10px;
   }
 
   .navigation-container {
@@ -137,9 +141,11 @@ img {
   }
 
   .address-list {
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+  justify-content: center;
   }
+.link-address-item {
+  word-break: break-all;
 }
 
 /* ========================= */
@@ -160,13 +166,12 @@ img {
   }
 
   .features-list {
-    flex-direction: column;
-  }
+  flex-wrap: wrap;
+}
 
-  .feature-card {
-    width: 100%;
-  }
-
+.feature-card {
+  min-width: 0; /* дуже важливо для flex */
+}
   .button-service {
     width: 100%;
     max-width: 260px;
