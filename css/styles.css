@@ -118,12 +118,8 @@ img {
   color: #fff;
   line-height: 1.2;
   letter-spacing: 0.5px;
-  background: linear-gradient(
-    rgba(255,255,255,0.9),
-    rgba(255,255,255,0.6)
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: rgba(255, 255, 255, 0.85);
+  text-shadow: 0 4px 20px rgba(0,0,0,0.4);
 }
 
 .hero-subtitle {
