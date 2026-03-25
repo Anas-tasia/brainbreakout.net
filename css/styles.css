@@ -71,11 +71,8 @@ img {
 .logo-link {
   display: flex;
   align-items: center;
-  gap: 8px;
-  font-family: 'Raleway';
-  font-weight: 800;
-  font-size: 20px;
-  color: #7ED957;
+  gap: 8px; /* відступ між іконкою і текстом */
+  text-decoration: none;
 }
 
 .logo-web {
