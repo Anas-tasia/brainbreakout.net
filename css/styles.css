@@ -4,6 +4,15 @@
 *::after {
   box-sizing: border-box;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
 body {
   margin: 0;
@@ -84,6 +93,8 @@ img {
   background: linear-gradient(135deg, #7ED957, #4A90E2);
   color: white;
   cursor: pointer;
+  display: block;
+  margin: 0 auto;
 }
 
 /* ===== FEATURES ===== */
