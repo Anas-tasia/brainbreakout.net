@@ -166,5 +166,6 @@ img {
   .button-service {
     width: 100%;
     max-width: 260px;
+    align-items: center;
   }
 }
